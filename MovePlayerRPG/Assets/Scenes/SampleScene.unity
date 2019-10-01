@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 64205071}
   - component: {fileID: 64205070}
   - component: {fileID: 64205073}
+  - component: {fileID: 64205074}
   m_Layer: 0
   m_Name: Enemy03
   m_TagString: Untagged
@@ -232,7 +233,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4bc7f13034fb04c84834f51a8b232e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePrefab: {fileID: 8668386913325937840, guid: ca676221a01d7a74c9892e478ed8b018,
+    type: 3}
   speed: 2
+--- !u!58 &64205074
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64205069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &206956784
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +264,7 @@ GameObject:
   - component: {fileID: 206956786}
   - component: {fileID: 206956785}
   - component: {fileID: 206956788}
+  - component: {fileID: 206956789}
   m_Layer: 0
   m_Name: Enemy02
   m_TagString: Untagged
@@ -345,8 +365,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac64ed6fd01924793d70a1d846ffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePrefab: {fileID: 6894106752325306145, guid: f2df6c676db308845ad06ac4f639b090,
+    type: 3}
   speed: 2
   distance: 4
+--- !u!58 &206956789
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206956784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +925,7 @@ GameObject:
   - component: {fileID: 1573107780}
   - component: {fileID: 1573107779}
   - component: {fileID: 1573107782}
+  - component: {fileID: 1573107783}
   m_Layer: 0
   m_Name: Enemy01
   m_TagString: Untagged
@@ -987,8 +1026,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a6a7bacaf59f2468a9d63522d55d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePrefab: {fileID: 6894106752325306145, guid: f2df6c676db308845ad06ac4f639b090,
+    type: 3}
   speed: 5
   operatingRange: 0.01
+--- !u!58 &1573107783
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573107778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!1 &1891052318
 GameObject:
   m_ObjectHideFlags: 0
