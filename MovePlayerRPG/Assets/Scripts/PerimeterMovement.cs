@@ -24,7 +24,7 @@ public class PerimeterMovement : ComplexMovement
         UpdateAnimation();
     }
 
-    private void Move()
+    protected override void Move()
     {
         base.Move();
 

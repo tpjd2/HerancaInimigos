@@ -12,8 +12,13 @@ public abstract class NonPlayerCharacterController : MonoBehaviour
     protected abstract void UpdateAnimation();
     protected void Fire()
     {
-        GameObject fire = (GameObject)Instantiate(firePrefab,transform.position, Quaternion.identity);
-        fire.GetComponent<FireController>().setTarget(GameController.instancia.getPlayer().position);        
+        GameObject fire = (GameObject)Instantiate(
+            firePrefab,
+            transform.position, 
+            Quaternion.identity
+            );
+        fire.GetComponent<FireController>()
+            .Target = GameController.instancia.getPlayer().position;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
